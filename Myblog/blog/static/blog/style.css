@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+
+* {
+  /* to remove default margin and padding of div */
+  padding: 0;
+  margin: 0;
+}
+
+.m-f {
+  font-family: "Aclonica", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  /* .. signifies one step out of folder where style css is situated */
+  background-color:lightslategray;
+  background-size: cover;
+  /* background remains still */
+  background-attachment: fixed;
+  position: relative;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  /* auto gives 15% margin left right(100 - 30) */
+  margin: 0 auto;
+  /* height equal to the parent container  */
+  height: 100%;
+}
+
+.header {
+  height: 100vh;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.header-content-wrapper {
+  /* this code centers the child elements on every page size  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header-content {
+  /* padding-top: 40vh; */
+  text-align: center;
+}
+
+.header-content h1,
+.intro-content h1,
+.contact-section h1 {
+  font-size: 42px;
+}
+
+.header-content h2 span {
+  color: #f1c11a;
+  line-height: 100px;
+}
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: all 400ms ease-in-out;
+}
+
+.btn-fill {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-fill:hover {
+  background-color: #f1c11a;
+  border-color: transparent;
+}
+
+.btn-trans:hover {
+  background-color: #f1c11a;
+  color: #000000;
+  border-color: transparent;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 15vh 0;
+}
+
+.intro-content {
+  min-height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.intro-content div {
+  width: 50%;
+}
+
+.intro-text p {
+  text-align: justify;
+  color: #828282;
+  line-height: 40px;
+}
+
+h1{
+  padding:20px;
+  margin:20px;
+  text-align:center;
+  color: #f1c11a;
+  line-height: 100px;
+}
+
+table{
+   width:100%;
+ }
+tr:nth-child(even){
+  background:gray;
+}
+td, th{
+  padding:10px;
+  height: 30px;
+}
+
+footer {
+  background-color: #f1c11a;
+  clip-path: polygon(
+    0 0,
+    15% 0,
+    50% 20%,
+    85% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0
+  );
+  margin-top: -10vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+.topnav{
+  overflow: hidden;
+  background-color:rgb(48, 48, 63);
+  padding: 20px 10px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:99;
+}
+.topnav a{
+  float: left;
+  color:azure;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: burlywood;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color:#f1c11a;
+  color: white;
+}
+
+section{
+  margin:140px 0px 0px 0px;
+  padding:20px;
+}

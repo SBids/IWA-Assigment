@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+
+{% block main_content %}
+<main>
+      <!-- Header section start -->
+      <div class="header">
+        <div class="container">
+          <div class="header-content-wrapper">
+            <!-- wraps the header content  -->
+            <div class="header-content">
+              <h1 class="m-f">Welcome to our Home page</h1>
+              <h2>
+                We are almost <span>ready to launch</span> our
+                <span>first Django Application</span>!
+              </h2>
+              <!-- grouping buttons for better layout -->
+              <div class="btn-group">
+                <a href="blog/list" class="btn btn-trans">Blogs</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        &copy; 2020
+      </footer>
+      <!-- Contact section end -->
+    </main>
+{% endblock %}

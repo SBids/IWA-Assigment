@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block main_content %}
+
+
+<section>
+{% for u in data %}
+
+<div style="background: rgba(0, 151, 19, 0.1); margin:auto; width:70%">
+        <div style="padding: 30px; margin:15px">
+            <div style="padding: 30px; margin:15px">
+            <h3 style="float:left; padding:10px">{{ u.title }}</h3>
+            <h4 style="float:right; padding:10px">{{ u.author }}</h4>
+        </div>
+        <br><div>
+            {{ u.content }}</div><br>
+            <div>
+                <h4 style="float:left">{{ u.blog_type }}</h4>
+                <h4 style="float:right">{{ u.created_at }}</h4>
+            </div>
+        </div>
+
+</div>
+{% endfor %}
+</section>
+{% endblock %}
